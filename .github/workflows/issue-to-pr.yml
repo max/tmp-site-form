@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        run: echo It should triage this issue
+        run: echo {{github.event.issue}}
