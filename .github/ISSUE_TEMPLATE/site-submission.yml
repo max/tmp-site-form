@@ -9,4 +9,4 @@ body:
     label: Site URL
     description: The URL to your personal site.
     placeholder: https://max.dev
-    required: true
+    required: false
