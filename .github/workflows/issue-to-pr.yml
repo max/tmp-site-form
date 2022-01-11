@@ -9,6 +9,8 @@ jobs:
     if: github.event.label.name == 'site-submission'
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
       - name: Check site submission issue
         uses: ./.github/actions/check-site-submission
         with:
