@@ -1,0 +1,9 @@
+name: "Check site submission"
+description: "Check that the site submission is indeed a site submission"
+inputs:
+  issue: # id of input
+    description: "The issue with the submission"
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"
