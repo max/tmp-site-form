@@ -1,0 +1,12 @@
+name: Site Submission
+description: Submit a new site to the directory
+title: "[Site]: "
+labels: ["site"]
+assignees:
+  - max
+body:
+  - type: input
+    label: Site URL
+    description: The URL to your personal site.
+    placeholder: https://max.dev
+    required: true
