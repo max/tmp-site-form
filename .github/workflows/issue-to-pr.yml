@@ -1,0 +1,13 @@
+name: Create PR from site submission issue
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  create-pr:
+    if: github.event.label.name == 'site-submission'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        run: echo It should triage this issue

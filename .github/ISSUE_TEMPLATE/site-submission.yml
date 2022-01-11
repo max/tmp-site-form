@@ -1,7 +1,7 @@
 name: Site Submission
 description: Submit a new personal site to the directory.
 title: "[Site]: "
-labels: ["site", "triage"]
+labels: ["site-submission"]
 assignees:
   - max
 body:
