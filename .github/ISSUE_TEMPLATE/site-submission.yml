@@ -1,5 +1,5 @@
 name: Site Submission
-description: Submit a new personal site
+description: Submit a new personal site to the directory.
 title: "[Site]: "
 labels: ["site", "triage"]
 assignees:
@@ -10,6 +10,6 @@ body:
     attributes:
       label: Site URL
       description: The URL of your personal site.
-      placeholder: ex. https://max.dev
+      placeholder: https://personal.website
     validations:
       required: true
