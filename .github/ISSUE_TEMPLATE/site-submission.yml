@@ -10,6 +10,6 @@ body:
     attributes:
       label: Site URL
       description: The URL of your personal site.
-      placeholder: https://personal.website
+      placeholder: https://brianlovin.com/
     validations:
       required: true
