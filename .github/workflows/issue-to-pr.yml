@@ -9,5 +9,7 @@ jobs:
     if: github.event.label.name == 'site-submission'
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repo
-        run: echo ${{github.event.issue.body}}
+      - name: Check site submission issue
+        uses: ./.github/actions/check-site-submission
+        with:
+          issue: "hello world"
