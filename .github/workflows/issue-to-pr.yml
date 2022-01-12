@@ -14,4 +14,5 @@ jobs:
         with:
           script: |
             const body = context.payload.issue.body;
-            console.log(body);
+            const url = body.match(/### Site URL\n\n(.*)/gm);
+            console.log(JSON.stringify(url));
