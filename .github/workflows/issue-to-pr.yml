@@ -13,6 +13,7 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
+            const { URL } = require('url');
             const body = context.payload.issue.body;
-            const url = body.match(/### Site URL\n\n(.*)/gm);
-            console.log(JSON.stringify(url));
+            const url = new URL(body.split('### Site URL\n\n')[1]);
+            console log(url);
