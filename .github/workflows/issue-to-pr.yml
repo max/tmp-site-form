@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check site submission issue
-        - uses: actions/github-script@v5
-          with:
-            script: |
-              const body = context.issue.body;
-              console.log(body);
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const body = context.issue.body;
+            console.log(body);
