@@ -13,5 +13,5 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            const body = context.issue.body;
+            const body = context.payload.issue.body;
             console.log(body);
