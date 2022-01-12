@@ -16,4 +16,4 @@ jobs:
             const { URL } = require('url');
             const body = context.payload.issue.body;
             const url = new URL(body.split('### Site URL\n\n')[1]);
-            console log(url);
+            console.log(url);
