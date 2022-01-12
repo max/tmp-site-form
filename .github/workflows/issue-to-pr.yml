@@ -9,11 +9,10 @@ jobs:
     if: github.event.label.name == 'site-submission'
     runs-on: ubuntu-latest
     steps:
-      - name: Check site submission issue
-        uses: actions/github-script@v5
+      - name: Parse site submission issue
+        uses: stefanbuck/github-issue-praser@v2
+        id: site-submission-parser
         with:
-          script: |
-            const { URL } = require('url');
-            const body = context.payload.issue.body;
-            const url = new URL(body.split('### Site URL\n\n')[1]);
-            console.log(url);
+          template-path: .github/ISSUE_TEMPLATE/site-submission.yml
+      - run: echo '${{ steps.site-submission-parser.outputs.jsonString }}' > site.json
+      - run: cat site.json
