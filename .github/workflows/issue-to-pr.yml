@@ -12,5 +12,5 @@ jobs:
         id: site-submission-parser
         with:
           template-path: .github/ISSUE_TEMPLATE/site-submission.yml
-      # - run: echo '${{ steps.site-submission-parser.outputs.jsonString }}' > site.json
-      # - run: cat site.json
+      - run: echo '${{ steps.site-submission-parser.outputs.jsonString }}' > site.json
+      - run: cat site.json
